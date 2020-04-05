@@ -15,24 +15,43 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(6px + 2vmin); */
   color: white;
+}
+.App-header h1 {
+  text-align: center;
+  font-size: 80px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+.App-header p {
+  text-align: right;
+  padding-right: 10px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  min-height: 100px;
+}
+
+.navbar-toggle {
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+label {
+  text-align: right;
+  padding-right: 10px
+}
+
+img {
+  padding: 0px;
 }

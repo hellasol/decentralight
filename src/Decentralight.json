@@ -1,0 +1,294 @@
+{
+  "fileName": "Decentralight.sol",
+  "contractName": "Decentralight",
+  "source": "pragma solidity ^0.6.0;\n\ncontract Decentralight {\n    bool private state;\n\n    function toggle() public {\n        state = !state;\n    }\n\n    // Reads the last stored value\n    function getState() public view returns (bool) {\n        return state;\n    }\n}",
+  "sourcePath": "contracts/Decentralight.sol",
+  "sourceMap": "25:229:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;25:229:0;;;;;;;;;;",
+  "deployedSourceMap": "25:229:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;25:229:0;;;;;;;;;;;;;;;;;;;;;;;12:1:-1;9;2:12;176:76:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;79:56;;;:::i;:::-;;176:76;217:4;240:5;;;;;;;;;;;233:12;;;;176:76;;:::o;79:56::-;123:5;;;;;;;;;;;122:6;114:5;;:14;;;;;;;;;;;;;;;;;;79:56;:::o",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getState",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "toggle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "contracts/Decentralight.sol",
+    "exportedSymbols": {
+      "Decentralight": [
+        21
+      ]
+    },
+    "id": 22,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 21,
+        "linearizedBaseContracts": [
+          21
+        ],
+        "name": "Decentralight",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "state",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 21,
+            "src": "54:18:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "54:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 11,
+              "nodeType": "Block",
+              "src": "104:31:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "state",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "114:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 8,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "!",
+                      "prefix": true,
+                      "src": "122:6:0",
+                      "subExpression": {
+                        "argumentTypes": null,
+                        "id": 7,
+                        "name": "state",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3,
+                        "src": "123:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "114:14:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10,
+                  "nodeType": "ExpressionStatement",
+                  "src": "114:14:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "40a3d246",
+            "id": 12,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "toggle",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "94:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:0:0"
+            },
+            "scope": 21,
+            "src": "79:56:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 19,
+              "nodeType": "Block",
+              "src": "223:29:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 17,
+                    "name": "state",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3,
+                    "src": "240:5:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 16,
+                  "id": 18,
+                  "nodeType": "Return",
+                  "src": "233:12:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "1865c57d",
+            "id": 20,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getState",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:2:0"
+            },
+            "returnParameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 20,
+                  "src": "217:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "217:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "216:6:0"
+            },
+            "scope": 21,
+            "src": "176:76:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 22,
+        "src": "25:229:0"
+      }
+    ],
+    "src": "0:254:0"
+  },
+  "bytecode": "0x60806040523480156100115760006000fd5b50610017565b60e2806100256000396000f3fe608060405234801560105760006000fd5b506004361060365760003560e01c80631865c57d14603c57806340a3d24614605c576036565b60006000fd5b60426064565b604051808215151515815260200191505060405180910390f35b6062607f565b005b6000600060009054906101000a900460ff169050607c565b90565b600060009054906101000a900460ff1615600060006101000a81548160ff0219169083151502179055505b56fea26469706673582212205369fe67299b8df7cfb7cd8077f9af3162078b13f5d953e6416fb09d40b20b6264736f6c63430006040033",
+  "deployedBytecode": "0x608060405234801560105760006000fd5b506004361060365760003560e01c80631865c57d14603c57806340a3d24614605c576036565b60006000fd5b60426064565b604051808215151515815260200191505060405180910390f35b6062607f565b005b6000600060009054906101000a900460ff169050607c565b90565b600060009054906101000a900460ff1615600060006101000a81548160ff0219169083151502179055505b56fea26469706673582212205369fe67299b8df7cfb7cd8077f9af3162078b13f5d953e6416fb09d40b20b6264736f6c63430006040033",
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.4+commit.1dca32f3.Emscripten.clang",
+    "optimizer": {},
+    "evmVersion": "constantinople"
+  },
+  "networks": {
+    "42": {
+      "links": {},
+      "events": {},
+      "address": "0x241eE646770c30d3377210F33D281b9a4D497462",
+      "updated_at": 1585855369985
+    }
+  }
+}

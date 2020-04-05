@@ -1,0 +1,182 @@
+{
+  "contracts": {
+    "Decentralight": {
+      "address": "0x5c7C04cC4A4eCa98741f8f8B4fE9182578272C41",
+      "constructorCode": "60806040523480156100115760006000fd5b50610017565b6102b8806100266000396000f3fe",
+      "bodyBytecodeHash": "0d894eb8c2dc055e844da4cf1824ed2d38ed0184084fa4332a455c0dd8452f24",
+      "localBytecodeHash": "31ada23b97c6e04ab9cccf6b3860dae8b844ada4a981abc30bc53e7304195dc8",
+      "deployedBytecodeHash": "31ada23b97c6e04ab9cccf6b3860dae8b844ada4a981abc30bc53e7304195dc8",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 72,
+          "type": "t_bool",
+          "src": "757:24:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 74,
+          "type": "t_bool",
+          "src": "876:25:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 136,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:1"
+        },
+        {
+          "contract": "Decentralight",
+          "path": "contracts/Decentralight.sol",
+          "label": "_state",
+          "astId": 145,
+          "type": "t_bool",
+          "src": "217:19:2"
+        },
+        {
+          "contract": "Decentralight",
+          "path": "contracts/Decentralight.sol",
+          "label": "_token",
+          "astId": 147,
+          "type": "t_address",
+          "src": "242:21:2"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    },
+    "ERC20Faucet": {
+      "address": "0xDb58950FB4cA4ec684C881641D933A881e5F3B05",
+      "constructorCode": "60806040523480156100115760006000fd5b50610017565b6101f6806100266000396000f3fe",
+      "bodyBytecodeHash": "af99a4fbd3c94057b9c250296870d33ceba3d083eda663470319c9cb8f73a9bc",
+      "localBytecodeHash": "aa837b56a889294d1893b1af2a91129b145e841dd7327b5be0b9094a68bae593",
+      "deployedBytecodeHash": "aa837b56a889294d1893b1af2a91129b145e841dd7327b5be0b9094a68bae593",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 72,
+          "type": "t_bool",
+          "src": "757:24:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 74,
+          "type": "t_bool",
+          "src": "876:25:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 136,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:1"
+        },
+        {
+          "contract": "ERC20Faucet",
+          "path": "contracts/ERC20Faucet.sol",
+          "label": "_token",
+          "astId": 198,
+          "type": "t_address",
+          "src": "214:21:3"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "decentralight/Decentralight": [
+      {
+        "address": "0x8057841f4524A40af936304E817af18191470478",
+        "version": "0.1.0",
+        "implementation": "0x5c7C04cC4A4eCa98741f8f8B4fE9182578272C41",
+        "admin": "0xAFB4f038253bb76a1b9AcB64d6C4097E14aDD30A",
+        "kind": "Upgradeable"
+      }
+    ],
+    "decentralight/ERC20Faucet": [
+      {
+        "address": "0xab15562508f02ef741AAD1Ca45D8bf886981F92D",
+        "version": "0.1.0",
+        "implementation": "0xDb58950FB4cA4ec684C881641D933A881e5F3B05",
+        "admin": "0xAFB4f038253bb76a1b9AcB64d6C4097E14aDD30A",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "0.1.0",
+  "proxyAdmin": {
+    "address": "0xAFB4f038253bb76a1b9AcB64d6C4097E14aDD30A"
+  }
+}

@@ -3,12 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@openzeppelin/contracts": "^2.5.0",
+    "@openzeppelin/contracts-ethereum-package": "^2.5.0",
+    "@openzeppelin/upgrades": "^2.8.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@truffle/hdwallet-provider": "^1.0.34",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "ethereumjs-tx": "^2.1.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-switch": "^5.0.1",
+    "reactstrap": "^8.4.1",
+    "web3": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,6 +34,7 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not ie <= 11",
       "not op_mini all"
     ],
     "development": [
