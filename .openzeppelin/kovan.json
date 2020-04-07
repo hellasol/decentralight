@@ -1,11 +1,11 @@
 {
   "contracts": {
     "Decentralight": {
-      "address": "0x5c7C04cC4A4eCa98741f8f8B4fE9182578272C41",
-      "constructorCode": "60806040523480156100115760006000fd5b50610017565b6102b8806100266000396000f3fe",
-      "bodyBytecodeHash": "0d894eb8c2dc055e844da4cf1824ed2d38ed0184084fa4332a455c0dd8452f24",
-      "localBytecodeHash": "31ada23b97c6e04ab9cccf6b3860dae8b844ada4a981abc30bc53e7304195dc8",
-      "deployedBytecodeHash": "31ada23b97c6e04ab9cccf6b3860dae8b844ada4a981abc30bc53e7304195dc8",
+      "address": "0xE5770FD36E2DF858E9863D5329bD87EFb66bf9ea",
+      "constructorCode": "60806040523480156100115760006000fd5b50610017565b61036f806100266000396000f3fe",
+      "bodyBytecodeHash": "7e72fe99d142cd9c96c550ffe4d1e627b06e0ca551a49d40f9f12128892e9e1a",
+      "localBytecodeHash": "99ad50b764f806f9ed14c5079dee441b37a388a9a494761db38af8edf2696a83",
+      "deployedBytecodeHash": "99ad50b764f806f9ed14c5079dee441b37a388a9a494761db38af8edf2696a83",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -35,41 +35,49 @@
           "contract": "Initializable",
           "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
           "label": "initialized",
-          "astId": 72,
+          "astId": 554,
           "type": "t_bool",
-          "src": "757:24:1"
+          "src": "757:24:4"
         },
         {
           "contract": "Initializable",
           "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
           "label": "initializing",
-          "astId": 74,
+          "astId": 556,
           "type": "t_bool",
-          "src": "876:25:1"
+          "src": "876:25:4"
         },
         {
           "contract": "Initializable",
           "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
           "label": "______gap",
-          "astId": 136,
+          "astId": 618,
           "type": "t_array:50<t_uint256>",
-          "src": "1982:29:1"
+          "src": "1982:29:4"
         },
         {
           "contract": "Decentralight",
           "path": "contracts/Decentralight.sol",
           "label": "_state",
-          "astId": 145,
+          "astId": 631,
           "type": "t_bool",
-          "src": "217:19:2"
+          "src": "336:19:5"
         },
         {
           "contract": "Decentralight",
           "path": "contracts/Decentralight.sol",
           "label": "_token",
-          "astId": 147,
+          "astId": 633,
           "type": "t_address",
-          "src": "242:21:2"
+          "src": "361:21:5"
+        },
+        {
+          "contract": "Decentralight",
+          "path": "contracts/Decentralight.sol",
+          "label": "_amount",
+          "astId": 635,
+          "type": "t_uint256",
+          "src": "388:23:5"
         }
       ],
       "warnings": {
@@ -77,15 +85,30 @@
         "hasSelfDestruct": false,
         "hasDelegateCall": false,
         "hasInitialValuesInDeclarations": false,
-        "uninitializedBaseContracts": []
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": [
+          {
+            "action": "append",
+            "updated": {
+              "index": 5,
+              "contract": "Decentralight",
+              "path": "contracts/Decentralight.sol",
+              "label": "_amount",
+              "astId": 635,
+              "type": "t_uint256",
+              "src": "388:23:5"
+            }
+          }
+        ]
       }
     },
     "ERC20Faucet": {
-      "address": "0xDb58950FB4cA4ec684C881641D933A881e5F3B05",
-      "constructorCode": "60806040523480156100115760006000fd5b50610017565b6101f6806100266000396000f3fe",
-      "bodyBytecodeHash": "af99a4fbd3c94057b9c250296870d33ceba3d083eda663470319c9cb8f73a9bc",
-      "localBytecodeHash": "aa837b56a889294d1893b1af2a91129b145e841dd7327b5be0b9094a68bae593",
-      "deployedBytecodeHash": "aa837b56a889294d1893b1af2a91129b145e841dd7327b5be0b9094a68bae593",
+      "address": "0xe87Bf06a0A9BFd98f0A061ab7afBFEFbe6dAFa28",
+      "constructorCode": "60806040523480156100115760006000fd5b50610017565b61024c806100266000396000f3fe",
+      "bodyBytecodeHash": "dfa9e937d0e5e044d41b222f357f11edd6f629c3866bafcff0c54f7cf88b570f",
+      "localBytecodeHash": "4139c6a38ef8359dacf25bca09dd3d52c8c77a24a6a1fdd43b98d7956746b6c2",
+      "deployedBytecodeHash": "4139c6a38ef8359dacf25bca09dd3d52c8c77a24a6a1fdd43b98d7956746b6c2",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -115,33 +138,41 @@
           "contract": "Initializable",
           "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
           "label": "initialized",
-          "astId": 72,
+          "astId": 554,
           "type": "t_bool",
-          "src": "757:24:1"
+          "src": "757:24:4"
         },
         {
           "contract": "Initializable",
           "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
           "label": "initializing",
-          "astId": 74,
+          "astId": 556,
           "type": "t_bool",
-          "src": "876:25:1"
+          "src": "876:25:4"
         },
         {
           "contract": "Initializable",
           "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
           "label": "______gap",
-          "astId": 136,
+          "astId": 618,
           "type": "t_array:50<t_uint256>",
-          "src": "1982:29:1"
+          "src": "1982:29:4"
         },
         {
           "contract": "ERC20Faucet",
           "path": "contracts/ERC20Faucet.sol",
           "label": "_token",
-          "astId": 198,
+          "astId": 716,
           "type": "t_address",
-          "src": "214:21:3"
+          "src": "334:21:6"
+        },
+        {
+          "contract": "ERC20Faucet",
+          "path": "contracts/ERC20Faucet.sol",
+          "label": "_amount",
+          "astId": 718,
+          "type": "t_uint256",
+          "src": "361:23:6"
         }
       ],
       "warnings": {
@@ -149,7 +180,22 @@
         "hasSelfDestruct": false,
         "hasDelegateCall": false,
         "hasInitialValuesInDeclarations": false,
-        "uninitializedBaseContracts": []
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": [
+          {
+            "action": "append",
+            "updated": {
+              "index": 4,
+              "contract": "ERC20Faucet",
+              "path": "contracts/ERC20Faucet.sol",
+              "label": "_amount",
+              "astId": 718,
+              "type": "t_uint256",
+              "src": "361:23:6"
+            }
+          }
+        ]
       }
     }
   },
@@ -160,6 +206,13 @@
         "address": "0x8057841f4524A40af936304E817af18191470478",
         "version": "0.1.0",
         "implementation": "0x5c7C04cC4A4eCa98741f8f8B4fE9182578272C41",
+        "admin": "0xAFB4f038253bb76a1b9AcB64d6C4097E14aDD30A",
+        "kind": "Upgradeable"
+      },
+      {
+        "address": "0xc2CD65B7b58399126373cd0D56b5afa07965052c",
+        "version": "0.1.0",
+        "implementation": "0xE5770FD36E2DF858E9863D5329bD87EFb66bf9ea",
         "admin": "0xAFB4f038253bb76a1b9AcB64d6C4097E14aDD30A",
         "kind": "Upgradeable"
       }
