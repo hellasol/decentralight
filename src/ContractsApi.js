@@ -30,8 +30,11 @@ export class ContractsApi {
         this.decentralightContract = new this.web3.eth.Contract((decentralightAbi), this.decentralightContractAddress);
         this.erc20contract = new this.web3.eth.Contract((erc20Abi), this.erc20ContractAddress);
         this.faucetContract = new this.web3.eth.Contract((faucetAbi), this.faucetContractAddress);
-    }
 
+        console.log(this.decentralightContractAddress);
+        console.log(this.erc20ContractAddress);
+    }
+   
    
 
     get selectedAddress() { return window.ethereum.selectedAddress; }
