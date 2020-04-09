@@ -24,9 +24,9 @@ export class ContractsApi {
     constructor() {
         this.web3 = new Web3(Web3.givenProvider);
         // this.web3.currentProvider.setMaxListeners(1000)
-        this.decentralightContractAddress = '0xc2CD65B7b58399126373cd0D56b5afa07965052c';
-        this.erc20ContractAddress = '0xC6938Ee7EaBd2a8afCdA1DcEf15F923facf7aa66';
-        this.faucetContractAddress = '0xab15562508f02ef741AAD1Ca45D8bf886981F92D'
+        this.decentralightContractAddress = process.env.REACT_APP_DECENTRALIGHT_CONTRACT_ADDRESS;
+        this.erc20ContractAddress = process.env.REACT_APP_ERC20CONTRACT_ADDRESS;
+        this.faucetContractAddress = process.env.REACT_APP_FAUCET_CONTRACT_ADDRESS;
         this.decentralightContract = new this.web3.eth.Contract((decentralightAbi), this.decentralightContractAddress);
         this.erc20contract = new this.web3.eth.Contract((erc20Abi), this.erc20ContractAddress);
         this.faucetContract = new this.web3.eth.Contract((faucetAbi), this.faucetContractAddress);
