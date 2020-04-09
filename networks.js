@@ -14,6 +14,10 @@ module.exports = {
      kovan: {
       provider: () => new HDWalletProvider(mnemonic, `https://kovan.infura.io/v3/${projectId}`),
       networkId: '42',
+     },
+     mainnet: {
+      provider: () => new HDWalletProvider(mnemonic, `https://mainnet.infura.io/v3/${projectId}`),
+      networkId: '1',
      }
   },
 };

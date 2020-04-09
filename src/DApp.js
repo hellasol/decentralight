@@ -4,7 +4,6 @@ import {ContractsApi} from './ContractsApi'
 import './App.css';
 import lightbulbON from './images/lightbulbON.png';
 import lightbulbOFF from './images/lightbulbOFF.png';
-import SwitchExample from './components/button';
 import {SpinnerAnimation} from './components/spinner';
 
 
@@ -14,25 +13,41 @@ export function DApp() {
   const [pending, setPending] = useState(false);
   const [canApprove, setCanApprove] = useState(true);
   const [canToggle, setCanToggle] = useState(false); 
-
+  const [hasEthereum, setHasEthereum] = useState(true);
+  const [selectedAddress, setSelectedAddress] = useState(0);
 
   const contractsApi = new ContractsApi();
-
+  async function syncData(){
+    const currentBalance = await contractsApi.getCurrentBlance();
+    const currentLightStatus = await contractsApi.getState();
+    const currentSelectedAddress = contractsApi.selectedAddress;
+    setBalance(currentBalance);
+    setLightStatus(currentLightStatus);
+    setSelectedAddress(currentSelectedAddress);
+  }
   useEffect(() => {
-    async function fetchData(){
-      await contractsApi.init();
-      const currentBalance = await contractsApi.getCurrentBlance();
-      const currentLightStatus = await contractsApi.getState();
-      setBalance(currentBalance);
-      setLightStatus(currentLightStatus);
+    async function onMount() {
+      const hasEthereum = await contractsApi.init();
+      setHasEthereum(hasEthereum);
+      console.log("1" + hasEthereum)
+      
+      if (hasEthereum) {
+        await syncData(); 
+      setInterval(syncData, 5000);
+      }
     }
-    fetchData();
-    // const subscription = contractsApi.subscribeToToggle((event) => console.log(event));
-    // console.log(subscription)
+    onMount();
   }, []); 
+  
+
   if(pending) {
     return <Col sm={{ size: 4, offset: 6 }}><SpinnerAnimation /></Col>
   }
+  if(!hasEthereum) {
+    console.log("2" + hasEthereum);
+    return <h1>Non-Ethereum browser detected. You should consider trying MetaMask!</h1> 
+  }
+
 
   function handleToggle() {
     contractsApi.toggle()
@@ -53,9 +68,11 @@ export function DApp() {
   }
 
     return (
+      
       <div className="App">
+  
         <div className="App-header">
-        <p >Your account: {contractsApi.selectedAddress}</p>
+        <p >Your account: {selectedAddress}</p>
         <p>Your DEC balance: {balance}</p>
         <h1>Decentralight</h1>
         </div>

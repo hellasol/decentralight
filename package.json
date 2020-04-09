@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@openzeppelin/cli": "^2.8.1",
     "@openzeppelin/contracts": "^2.5.0",
     "@openzeppelin/contracts-ethereum-package": "^2.5.0",
     "@openzeppelin/upgrades": "^2.8.0",
@@ -19,7 +20,7 @@
     "react-scripts": "3.4.1",
     "react-switch": "^5.0.1",
     "reactstrap": "^8.4.1",
-    "web3": "^1.2.2"
+    "web3": "^1.2.6"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -5,8 +5,25 @@ import { abi as faucetAbi } from './ERC20Faucet.json'
 
 
 export class ContractsApi {
+
+    async init() {
+        if(!window.ethereum) {
+            return false;
+        }
+        try {
+            await window.ethereum.enable();
+        } catch (error) {
+            return false; 
+        }
+        return true;
+
+    
+
+    }
+
     constructor() {
         this.web3 = new Web3(Web3.givenProvider);
+        // this.web3.currentProvider.setMaxListeners(1000)
         this.decentralightContractAddress = '0xc2CD65B7b58399126373cd0D56b5afa07965052c';
         this.erc20ContractAddress = '0xC6938Ee7EaBd2a8afCdA1DcEf15F923facf7aa66';
         this.faucetContractAddress = '0xab15562508f02ef741AAD1Ca45D8bf886981F92D'
@@ -15,9 +32,7 @@ export class ContractsApi {
         this.faucetContract = new this.web3.eth.Contract((faucetAbi), this.faucetContractAddress);
     }
 
-    async init() {
-        await window.ethereum.enable();
-    }
+   
 
     get selectedAddress() { return window.ethereum.selectedAddress; }
     
@@ -46,32 +61,21 @@ export class ContractsApi {
         const promiEvent = this.faucetContract.methods.withdraw().send({from: this.selectedAddress})
         return new TransactionWatcher(promiEvent);
     }
-    // subscribeToToggle(callback) {
-    //     function handler(error, event){
-    //         console.log(error, event)
-    //         if (!error)
-    //             callback(event.returnValues);
-    //     }
-    //     return this.decentralightContract.events.Toggle({}, handler);
-    // }
+
+    
 }
+
 
 class TransactionWatcher {
     constructor(promiEvent){
         this.promiEvent = promiEvent; 
     }
     onTxHash(callback){
-        this.promiEvent.once('transactionHash', () => { console.log("hash"); callback(); });
+        this.promiEvent.once('transactionHash', () => { callback(); });
         return this;
     }
     onConfirmation(callback){
-        this.promiEvent.on('confirmation', (confirmationNumber) => {
-            console.log("confirmation", confirmationNumber);
-        if(confirmationNumber === 0){
-            console.log("Confirmed")
-            callback();
-        }
-        })
+        this.promiEvent.once('confirmation', () => { callback(); });
         return this;
     }
 
