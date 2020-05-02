@@ -18,6 +18,7 @@ contract Decentralight is Initializable{
         _amount = amount;
         _token = token;
     }
+    
 
     function toggle() public {
         _token.transferFrom(msg.sender, address(this), _amount);

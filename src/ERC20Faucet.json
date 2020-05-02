@@ -34,21 +34,14 @@
   "ast": {
     "absolutePath": "contracts/ERC20Faucet.sol",
     "exportedSymbols": {
-      "ERC20Faucet": [
-        221
-      ]
+      "ERC20Faucet": [221]
     },
     "id": 222,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 192,
-        "literals": [
-          "solidity",
-          "^",
-          "0.5",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.5", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:23:3"
       },
@@ -95,17 +88,12 @@
             "src": "195:13:3"
           }
         ],
-        "contractDependencies": [
-          137
-        ],
+        "contractDependencies": [137],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 221,
-        "linearizedBaseContracts": [
-          221,
-          137
-        ],
+        "linearizedBaseContracts": [221, 137],
         "name": "ERC20Faucet",
         "nodeType": "ContractDefinition",
         "nodes": [

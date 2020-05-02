@@ -88,21 +88,14 @@
   "ast": {
     "absolutePath": "contracts/Decentralight.sol",
     "exportedSymbols": {
-      "Decentralight": [
-        704
-      ]
+      "Decentralight": [704]
     },
     "id": 705,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 621,
-        "literals": [
-          "solidity",
-          "^",
-          "0.5",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.5", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:23:5"
       },
@@ -160,17 +153,12 @@
             "src": "285:13:5"
           }
         ],
-        "contractDependencies": [
-          619
-        ],
+        "contractDependencies": [619],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 704,
-        "linearizedBaseContracts": [
-          704,
-          619
-        ],
+        "linearizedBaseContracts": [704, 619],
         "name": "Decentralight",
         "nodeType": "ContractDefinition",
         "nodes": [
