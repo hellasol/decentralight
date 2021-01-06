@@ -11,7 +11,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@truffle/hdwallet-provider": "^1.0.34",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "ethereumjs-tx": "^2.1.1",
     "react": "^16.13.1",
