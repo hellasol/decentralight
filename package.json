@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@openzeppelin/cli": "^2.8.1",
-    "@openzeppelin/contracts": "^2.5.0",
+    "@openzeppelin/contracts": "^4.4.2",
     "@openzeppelin/contracts-ethereum-package": "^2.5.0",
     "@openzeppelin/upgrades": "^2.8.0",
     "@testing-library/jest-dom": "^4.2.4",
